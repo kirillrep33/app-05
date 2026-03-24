@@ -745,11 +745,7 @@ struct DaySurveyScreen: View {
                 }
 
             VStack(alignment: .leading, spacing: 0) {
-                Capsule(style: .continuous)
-                    .fill(Color.white.opacity(0.2))
-                    .frame(width: 48 * sx, height: 4 * sy)
-                    .frame(maxWidth: .infinity)
-                    .padding(.top, 10 * sy)
+
 
                 Text(fullDateTitle(for: day))
                     .font(.system(size: 24 * sy, weight: .semibold))

@@ -1241,7 +1241,7 @@ struct DaySurveyScreen: View {
 
     private var isPlayModeAvailable: Bool {
         let hour = Calendar.current.component(.hour, from: Date())
-        return hour >= 10
+        return hour >= 18 || hour < 8
     }
 
     private var displayedAdviceText: String {
